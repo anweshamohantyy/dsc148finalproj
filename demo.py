@@ -6,7 +6,7 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-# ── Page config ────────────────────────────────────────────────────────────────
+# Page config 
 st.set_page_config(
     page_title="Flight Delay Predictor",
     page_icon="✈️",
@@ -19,7 +19,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ── Constants ──────────────────────────────────────────────────────────────────
+# Constants 
 CARRIERS = [
     ("WN", "Southwest Airlines"),
     ("DL", "Delta Air Lines"),
@@ -67,7 +67,7 @@ NUMERIC_FEATURES     = ['year', 'arr_flights', 'cancel_rate', 'diversion_rate', 
 FEATURES             = CATEGORICAL_FEATURES + NUMERIC_FEATURES
 TARGET               = 'avg_delay_minutes_per_flight'
 
-# ── Model + data (cached) ──────────────────────────────────────────────────────
+# Model + data (cached)
 @st.cache_resource
 def load_model_and_data():
     df = pd.read_csv('Airline_Delay_Cause_cleaned_sample_60k.csv')
@@ -96,7 +96,7 @@ def load_model_and_data():
 
     return model, df_clean, historical_avg, global_stats
 
-# ── UI ─────────────────────────────────────────────────────────────────────────
+# UI 
 st.title("✈️ Flight Delay Predictor")
 st.caption("DSC 148 Final Project — predict average arrival delay in minutes")
 st.divider()
@@ -118,7 +118,7 @@ with col2:
 
     year = st.slider("Year", min_value=2003, max_value=2025, value=2024)
 
-# ── Auto-fill numeric features from historical averages ───────────────────────
+# Auto-fill numeric features from historical averages
 key = (carrier_code, airport_code, month_num)
 if key in historical_avg.index:
     stats = historical_avg.loc[key]
@@ -138,7 +138,7 @@ st.info(
     icon=None
 )
 
-# ── Prediction ─────────────────────────────────────────────────────────────────
+# Prediction
 if st.button("Predict delay", type="primary", use_container_width=True):
     input_df = pd.DataFrame([{
         'carrier':        carrier_code,
