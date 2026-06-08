@@ -18,18 +18,8 @@ The downloadable CSV for this data is also included in this repository.
 
 ## Project Repository Components
 
-- `Airline_Delay_Cause_cleaned_sample_60k.csv`
-- `file2`
-- `file3`
+- Data: `Airline_Delay_Cause_cleaned_sample_60k.csv`
+- EDA: `DSC148_Final_Project_EDA.ipynb`
+- Models: `DSC148_Final_Prroject_Modeling.ipynb`
+- Report: `DSC148_Final_Project_Report.pdf`
 
-
-
-## To Do
-
-- [ ] EDA - Akshitaa
-- [ ] Models - Anwesha
-  - [ ] Baseline model: Logistic Regression
-  - [ ] Tree model: Decision Tree or Random Forest
-  - [ ] Better model: XGBoost or LightGBM
-- [ ] Demo w Streamlit - Anwesha
-- [ ] Report (latex) - Akshitaa
