@@ -12,14 +12,17 @@
 🔗 https://dsc148finalproj-wj7jfttxdv35vhgmf5tb7x.streamlit.app/
 
 ## Dataset
+🔗 https://www.kaggle.com/datasets/daryaheyko/airline-on-time-statistics-and-delay-causes-bts
 
-## Files
+The downloadable CSV for this data is also included in this repository.
 
-- `file1`
+## Project Repository Components
+
+- `Airline_Delay_Cause_cleaned_sample_60k.csv`
 - `file2`
 - `file3`
 
-Dataset: https://www.kaggle.com/datasets/daryaheyko/airline-on-time-statistics-and-delay-causes-bts
+
 
 ## To Do
 
