@@ -20,6 +20,6 @@ The downloadable CSV for this data is also included in this repository.
 
 - Data: `Airline_Delay_Cause_cleaned_sample_60k.csv`
 - EDA: `DSC148_Final_Project_EDA.ipynb`
-- Models: `DSC148_Final_Prroject_Modeling.ipynb`
-- Report: `DSC148_Final_Project_Report.pdf`
+- Models & Results: `DSC148_Final_Prroject_Modeling.ipynb`
+- Report (Includes Literature & Results): `DSC148_Final_Project_Report.pdf`
 
