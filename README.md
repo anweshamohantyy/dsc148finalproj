@@ -22,4 +22,5 @@ The downloadable CSV for this data is also included in this repository.
 - EDA: `DSC148_Final_Project_EDA.ipynb`
 - Models & Results: `DSC148_Final_Prroject_Modeling.ipynb`
 - Report (includes Literature & Results): `DSC148_Final_Project_Report.pdf`
+- Demo Components: `demo.py` and `requirements.txt` 
 
